@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barthelemy - Restaurant Français à Boulogne-Billancourt</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Barthelemy</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li class="nav-item"><a href="#carte" class="nav-link">Carte</a></li>
+                    <li class="nav-item"><a href="#reservation" class="nav-link">Réservation</a></li>
+                    <li class="nav-item"><a href="#galerie" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Barthelemy</h1>
+            <p>Un authentique restaurant français à Boulogne-Billancourt</p>
+            <div class="hero-buttons">
+                <a href="#reservation" class="btn btn-primary">Réserver une table</a>
+                <a href="#carte" class="btn btn-secondary">Voir notre carte</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Notre histoire</h2>
+                <p>Barthelemy est un restaurant authentique situé au cœur de Boulogne-Billancourt. Nous proposons une cuisine française traditionnelle préparée avec des ingrédients locaux de qualité.</p>
+                <p>Notre établissement allie l'atmosphère d'un bar à la convivialité d'un restaurant, créant un espace chaleureux où l'on se sent immédiatement chez soi.</p>
+                <div class="certifications">
+                    <span class="cert-badge">Fait Maison</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="carte" class="menu">
+        <div class="container">
+            <h2>Notre carte</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="entrees">Entrées</button>
+                <button class="tab-btn" data-category="plats">Plats</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="boissons">Boissons</button>
+            </div>
+            <div class="menu-items">
+                <!-- Entrées -->
+                <div class="menu-category active" data-category="entrees">
+                    <div class="menu-item">
+                        <h3>Tartare de boeuf</h3>
+                        <p>Viande de premier choix, accompagné de frites maison</p>
+                        <span class="price">18€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Planche de charcuterie</h3>
+                        <p>Assortiment de produits du terroir français</p>
+                        <span class="price">16€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Escargots de Bourgogne</h3>
+                        <p>Présentés en croûte d'ail et persillade</p>
+                        <span class="price">14€</span>
+                    </div>
+                </div>
+
+                <!-- Plats -->
+                <div class="menu-category" data-category="plats">
+                    <div class="menu-item">
+                        <h3>Entrecôte grillée</h3>
+                        <p>Viande de bœuf premium, servie avec frites ou salade</p>
+                        <span class="price">28€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Magret de canard</h3>
+                        <p>Préparé avec sauce aux cerises, pommes sarladaises</p>
+                        <span class="price">24€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Poisson du jour</h3>
+                        <p>Selon arrivage, accompagné de légumes de saison</p>
+                        <span class="price">22€</span>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" data-category="desserts">
+                    <div class="menu-item">
+                        <h3>Mousse au chocolat</h3>
+                        <p>Recette traditionnelle maison</p>
+                        <span class="price">8€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Tarte Tatin</h3>
+                        <p>Pommes caramélisées, glace vanille artisanale</p>
+                        <span class="price">9€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Fromages affinés</h3>
+                        <p>Assortiment de fromages français</p>
+                        <span class="price">12€</span>
+                    </div>
+                </div>
+
+                <!-- Boissons -->
+                <div class="menu-category" data-category="boissons">
+                    <div class="menu-item">
+                        <h3>Vin rouge - Verre</h3>
+                        <p>Côtes-du-Rhône, Domaine de la Janasse</p>
+                        <span class="price">7€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Bière artisanale</h3>
+                        <p>Brasserie Dupont, bière blonde</p>
+                        <span class="price">6€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h3>Café</h3>
+                        <p>Expresso, décaféiné, allongé</p>
+                        <span class="price">3€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Réservation</h2>
+            <form class="reservation-form" id="reservation-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Heure</label>
+                    <select id="time" name="time" required>
+                        <option value="">Sélectionnez une heure</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="13:00">13:00</option>
+                        <option value="13:30">13:30</option>
+                        <option value="19:00">19:00</option>
+                        <option value="19:30">19:30</option>
+                        <option value="20:00">20:00</option>
+                        <option value="20:30">20:30</option>
+                        <option value="21:00">21:00</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Nombre de personnes</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Sélectionnez</option>
+                        <option value="1">1 personne</option>
+                        <option value="2">2 personnes</option>
+                        <option value="3">3 personnes</option>
+                        <option value="4">4 personnes</option>
+                        <option value="5">5 personnes</option>
+                        <option value="6">6 personnes</option>
+                        <option value="7">7 personnes</option>
+                        <option value="8">8 personnes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message (optionnel)</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Réserver maintenant</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerie" class="gallery">
+        <div class="container">
+            <h2>Notre galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Intérieur du restaurant">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Plat signature">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Bar du restaurant">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Dessert artisanal">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>61 Bd de la République<br>92100 Boulogne-Billancourt</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+33 1 45 55 55 55</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>contact@barthelemy.fr</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Lundi - Vendredi: 12h - 22h<br>Samedi - Dimanche: 18h - 23h</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.364689577443!2d2.2486566!3d48.8326487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67aec0b37dc6d%3A0xfc5873d8dc4fba63!2sBarthelemy!5e0!3m2!1sen!2sus!4v1650000000000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Barthelemy</h3>
+                    <p>Un authentique restaurant français à Boulogne-Billancourt</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#carte">Carte</a></li>
+                        <li><a href="#reservation">Réservation</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Heures d'ouverture</h4>
+                    <p>Lundi - Vendredi: 12h - 22h</p>
+                    <p>Samedi - Dimanche: 18h - 23h</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Barthelemy. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
